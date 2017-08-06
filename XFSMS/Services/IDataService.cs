@@ -14,14 +14,14 @@ namespace XFSMS.Services
         bool PostAd(AdPost Ad);
         bool UpdateAd(AdPost Ad);
         bool RemoveAd(AdPost Ad);
-
+        //comment
         //Events
         List<User> GetEventMembers(string PostID);
         List<EventPost> GetEventsByUser(string UserID); 
 		List<EventPost> GetEventsFeatured();
         bool PostEvent(EventPost Event);
-        bool UpdateEvent(AdPost Ad);
-        bool RemoveEvent(AdPost Ad);
+        bool UpdateEvent(EventPost Ad);
+        bool RemoveEvent(EventPost Ad);
 
         //User
         List<User> GetFriends(string UserID);
