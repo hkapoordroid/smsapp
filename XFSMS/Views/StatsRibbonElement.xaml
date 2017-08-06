@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Grid xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Name="this" x:Class="XFSMS.Views.StatsRibbonElement">
+
+        <StackLayout BackgroundColor="Silver" Orientation="Horizontal" Grid.Row="0" Grid.Column="0">
+            <BoxView BackgroundColor="red" WidthRequest="20" HeightRequest="20"/>
+            <Label x:Name="Count" Text="{Binding pCount, Source={x:Reference this}}"/>
+            <Label x:Name="Title" Text="{Binding pTitle, Source={x:Reference this}}"/>
+        </StackLayout>
+</Grid>

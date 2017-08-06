@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XFSMS.App">
+	<Application.Resources>
+         <ResourceDictionary>
+            <Color x:Key="Primary">#fbe9e7</Color>
+            <Color x:Key="Primary-Light">#ffffff</Color>
+            <Color x:Key="Primary-Dark">#c8b7b5</Color>
+            <Color x:Key="Secondary">#ff5252</Color>
+            <Color x:Key="Secondary-Light">#ff867f</Color>
+            <Color x:Key="Secondary-Dark">#c50e29</Color>
+       
+            <Color x:Key="BCPink0">#ffc1e2</Color>
+            <Color x:Key="BCPink1">#ff99d0</Color>
+            <Color x:Key="BCPink2">#ff63b8</Color>
+            <Color x:Key="BCPink3">#ff3da7</Color>
+            <Color x:Key="BCPink4">#fc028b</Color>
+            <Color x:Key="BCBlue0">#d7e3ef</Color>
+            <Color x:Key="BCBlue1">#c8def4</Color>
+            <Color x:Key="BCBlue2">#a6bfd8</Color>
+            <Color x:Key="BCBlue3">#89a6c4</Color>
+            <Color x:Key="BCBlue4">#7db3ed</Color>
+            <Color x:Key="BCGrey0">#eaebed</Color>
+            <Color x:Key="BCGrey1">#d4d5d8</Color>
+            <Color x:Key="BCGrey2">#b2b3b7</Color>
+            <Color x:Key="BCGrey3">#8b8c8e</Color>
+            <Color x:Key="BCGrey4">#585859</Color>
+            <Color x:Key="BCWhite0">#ffffff</Color>
+
+
+            <Style x:Key="ImageFrame"  TargetType="Frame">
+                <Setter Property="HasShadow" Value="false" />
+                <Setter Property="Padding" Value="10" />
+                <Setter Property="CornerRadius" Value="0" />
+               <Setter Property="HeightRequest" Value="300" />
+                <Setter Property="Margin" Value="0" />
+             </Style>
+            <Style x:Key="EntryMainPage" TargetType="Entry">
+                <Setter Property="BackgroundColor" Value="{StaticResource BCWhite0}" />
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="Margin" Value="0" />
+            </Style>
+            <Style x:Key="ButtonMainPage" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource Secondary}" />
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="Margin" Value="0" />
+               <Setter Property="HeightRequest" Value="40" />
+                <Setter Property="WidthRequest" Value="60" />
+            </Style>
+            <Style x:Key="ButtonFrame" TargetType="Frame" >
+                 <Setter Property="BackgroundColor" Value="{StaticResource Secondary}" />
+                <Setter Property="OutlineColor" Value="{StaticResource BCWhite0}" />
+                <Setter Property="Margin" Value="1"/>
+                <Setter Property="HasShadow" Value="false"/>
+            </Style>
+            <Style x:Key="HeaderFrame" TargetType="Frame" >
+                 <Setter Property="BackgroundColor" Value="{StaticResource Primary-Dark}" />
+                <Setter Property="OutlineColor" Value="{StaticResource BCWhite0}" />
+                <Setter Property="Margin" Value="1"/>
+                <Setter Property="HasShadow" Value="false"/>
+            </Style>
+            <Style x:Key="ListViewStyle" TargetType="ListView" >
+                 <Setter Property="BackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="Margin" Value="0"/>
+            </Style>
+         </ResourceDictionary>
+		<!-- Application resource dictionary -->
+	</Application.Resources>
+    
+</Application>

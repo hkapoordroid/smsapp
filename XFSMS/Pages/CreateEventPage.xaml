@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage Title="Create New Event" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XFSMS.Pages.CreateEventPage">
+	<ContentPage.Content>
+
+        <StackLayout Orientation="Vertical">
+             <Frame Style="{StaticResource ImageFrame}">
+             <Image BackgroundColor="Silver">
+            </Image>
+            </Frame>
+            <TableView BackgroundColor="{StaticResource Primary}">
+            <TableRoot>
+                
+                <TableSection Title=" ">
+                    <EntryCell Label="Title" Placeholder="Your Event's Title" >
+
+                    </EntryCell>
+                    <EntryCell Label="Description" Placeholder="Describe your event" >
+
+                    </EntryCell>
+
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                        <Label Text="   Event Type" VerticalOptions="Center" HorizontalOptions="End"/> 
+                        <Picker SelectedIndex="1" HorizontalOptions="EndAndExpand" ItemsSource="{Binding _ServiceTypes}">    
+                            </Picker>
+                        </StackLayout>
+                    </ViewCell>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                        <Label Text="   Start Date" VerticalOptions="Center" HorizontalOptions="End"/>                            
+                        <DatePicker HorizontalOptions="EndAndExpand" />        
+
+                        </StackLayout>
+                    </ViewCell>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                        <Label Text="   End Date" VerticalOptions="Center" HorizontalOptions="End"/>
+                        <DatePicker HorizontalOptions="EndAndExpand" />        
+                        </StackLayout>
+                    </ViewCell>
+                    </TableSection>
+             </TableRoot>
+        </TableView>
+
+                          <Frame Style="{StaticResource HeaderFrame}" Padding="5">
+                 <Grid Style="{StaticResource HeaderFrame}">
+                        <Button Style="{StaticResource ButtonMainPage}" HorizontalOptions="Start" x:Name="btn1"  Text="Chat"  />
+                   <Button Style="{StaticResource ButtonMainPage}" x:Name="btn2"  HorizontalOptions="Center"  Text="Start"  />
+                        <Button Style="{StaticResource ButtonMainPage}" HorizontalOptions="End" x:Name="btn3"   Text="Agree"  />
+                 
+                 </Grid>
+               </Frame>
+
+            
+          </StackLayout>
+	</ContentPage.Content>
+</ContentPage>

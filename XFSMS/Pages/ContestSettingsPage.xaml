@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage Title="Create New Contest" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:usercontrols="clr-namespace:XFSMS.Views" x:Class="XFSMS.Pages.ContestSettingsPage">
+	<ContentPage.Content>    
+        <StackLayout Orientation="Vertical" BackgroundColor="White" Margin="10" AnchorY="200">
+            <StackLayout Margin="5" Orientation="Horizontal" BackgroundColor="Gray">
+                <Label Text="Title" VerticalOptions="Center"></Label>
+                <Entry x:Name="txtTitle" Text="{Binding _Title}" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <StackLayout Margin="5" Orientation="Horizontal" BackgroundColor="Gray">
+                <Label Text="Description" VerticalOptions="Center"></Label>
+                <Entry x:Name="txtDesc" HorizontalOptions="FillAndExpand" Text="{Binding _Description}"/>
+            </StackLayout>
+             <StackLayout Margin="5" Orientation="Horizontal" BackgroundColor="Gray">
+                <Label Text="Start Date" VerticalOptions="Center"></Label>
+                <DatePicker x:Name="dpStartDate" Date="{Binding _StartDate}"/>
+            </StackLayout>
+            <StackLayout Margin="5" Orientation="Horizontal" BackgroundColor="Gray">
+                <Label Text="Criteria Followers" VerticalOptions="Center"></Label>
+                <Entry x:Name="txtCriteriaFollower" HorizontalOptions="FillAndExpand" Text="{Binding _CriteriaFollowers}"/>
+            </StackLayout>
+
+                <Button x:Name="btnSave" HorizontalOptions="Center" Text="Save"></Button>
+        </StackLayout>
+	</ContentPage.Content>
+</ContentPage>

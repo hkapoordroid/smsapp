@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage Title="Explore" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XFSMS.Pages.ExplorePage">
+	<ContentPage.Content>
+        <StackLayout Orientation="Vertical" Spacing="1">
+
+
+                <Frame Style="{StaticResource ButtonFrame}" Margin="0" Padding="0" HasShadow="false" >
+                    <ListView x:Name="FullList" SelectedItem="{Binding Selected}" HorizontalOptions="FillAndExpand" Style="{StaticResource ListViewStyle}" SeparatorVisibility="None" HasUnevenRows="true" CachingStrategy="RecycleElement"  VerticalOptions="Center"  ItemsSource="{Binding FeaturedAds}" >
+
+                    <ListView.Header>
+                       <Frame BackgroundColor="{StaticResource Primary}" HasShadow="false" CornerRadius="0" Padding="5" >
+                             <Entry x:Name="Search" BackgroundColor="{StaticResource Primary-Light}" Margin="5" Placeholder="Search" HorizontalOptions="Fill"/>
+                        </Frame>
+                    </ListView.Header>
+                    
+                    <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell >
+                                    <Frame Padding="20" Margin="0,0,2,0" CornerRadius="0" HasShadow="false">
+                                     <Grid BackgroundColor="{StaticResource Primary}">  
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="8*"/>
+                                            <RowDefinition Height="1*"/>        
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width ="*"/>
+                                            <ColumnDefinition Width ="*"/>
+                                            <ColumnDefinition Width ="*"/>   
+                                            <ColumnDefinition Width ="*"/>
+                                            <ColumnDefinition Width ="*"/>
+                                            <ColumnDefinition Width ="*"/> 
+                                        </Grid.ColumnDefinitions>
+                                        <BoxView BackgroundColor="Silver"  Grid.ColumnSpan="6" Grid.Column="0" Grid.Row="0"/>
+                                       <BoxView  WidthRequest="10" HeightRequest="10" BackgroundColor="Green"  Grid.Column="0" Grid.Row="1"/>
+                                        <Label x:Name="Count1" Text="{Binding Compensation.Offering}"  Grid.Column="1" Grid.Row="1" />
+                                        <BoxView  WidthRequest="10" HeightRequest="10" BackgroundColor="Yellow"   Grid.Column="2" Grid.Row="1" />
+                                        <Label x:Name="Count2" Text="{Binding NetFollowersCount}"   Grid.Column="3" Grid.Row="1" />
+                                        </Grid> 
+                                        </Frame>
+                                </ViewCell>
+                                    <!--local:ContestTile InstaLikes="{Binding _InstaLikes}" InstaComments="{Binding _InstaComments}" InstaFollowers="{Binding _InstaFollowers}" />-->
+
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                        <!--local:ContestTile InstaLikes="80" InstaComments="90" InstaFollowers="76" />-->
+                    </ListView>
+
+                </Frame>
+                 <Frame HasShadow="false" CornerRadius="0" Padding="1">
+                 <Grid BackgroundColor="{StaticResource Primary}">
+                        <Button Style="{StaticResource ButtonMainPage}" HorizontalOptions="Start" x:Name="btn5"  Text="Ads"  />
+            
+                       
+  
+                        <Button Style="{StaticResource ButtonMainPage}" x:Name="btn7"  HorizontalOptions="End" Text="Events"  />
+                
+                 </Grid>
+               </Frame>
+            </StackLayout>        
+	</ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Grid xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Name="this" xmlns:local="clr-namespace:XFSMS.Views" x:Class="XFSMS.Views.ContestTileStatsRibbon" HorizontalOptions="FillAndExpand">
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width ="*"/>
+        <ColumnDefinition Width ="*"/>
+        <ColumnDefinition Width ="*"/>
+               
+    </Grid.ColumnDefinitions>
+    <local:StatsRibbonElement pTitle="{Binding TxtAffinity, Source={x:Reference this}}" pCount="{Binding CountAffinity, Source={x:Reference this}}" Grid.Row="0" Grid.Column="0"/>
+    <local:StatsRibbonElement pTitle="{Binding TxtTalks, Source={x:Reference this}}" pCount="{Binding CountTalks, Source={x:Reference this}}" Grid.Row="0" Grid.Column="1"/>
+    <local:StatsRibbonElement pTitle="{Binding TxtCrowd, Source={x:Reference this}}" pCount="{Binding CountCrowd, Source={x:Reference this}}" Grid.Row="0" Grid.Column="2"/>
+
+
+</Grid>

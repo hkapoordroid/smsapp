@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XFSMS.Pages.EventInfoPage">
+	<ContentPage.Content>
+
+        <StackLayout Orientation="Vertical">
+                             <Frame Style="{StaticResource ImageFrame}">
+             <Image BackgroundColor="Silver">
+            </Image>
+            </Frame>
+            <TableView BackgroundColor="{StaticResource Primary}">
+            <TableRoot>
+                
+                <TableSection Title=" ">
+                    <TextCell Text= "Event's Title" >
+
+                    </TextCell>
+
+                     <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <Label LineBreakMode="WordWrap" Text="Fusce egestas facilisis lorem, in egestas massa sollicitudin at. Suspendisse potenti. Praesent ornare commodo quam, a tincidunt nulla tempor eget. Nam libero ligula, ultrices malesuada rutrum non, vestibulum eu libero. Proin sed enim eu lorem facilisis rhoncus. Aliquam erat volutpat. Ut posuere eleifend congue. Nulla viverra eros ac est vestibulum, et sollicitudin enim dictum. Sed ut justo volutpat mauris condimentum aliquam sed consectetur nisi. Morbi ac nulla sollicitudin, sodales leo sed, vestibulum justo."/>
+                        </StackLayout>
+                    </ViewCell>
+                    <EntryCell Label="Description" Placeholder="Describe your event" >
+
+                    </EntryCell>
+
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                        <Label Text="   Service Type" VerticalOptions="Center" HorizontalOptions="End"/> 
+                        <Picker SelectedIndex="1" HorizontalOptions="EndAndExpand" ItemsSource="{Binding _ServiceTypes}">    
+                            </Picker>
+                        </StackLayout>
+                    </ViewCell>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                        <Label Text="   Start Date" VerticalOptions="Center" HorizontalOptions="End"/>                            
+                        <DatePicker HorizontalOptions="EndAndExpand" />        
+
+                        </StackLayout>
+                    </ViewCell>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                        <Label Text="   End Date" VerticalOptions="Center" HorizontalOptions="End"/>
+                        <DatePicker HorizontalOptions="EndAndExpand" />        
+                        </StackLayout>
+                    </ViewCell>
+                </TableSection>
+
+                    <TableSection Title="Instagram Gains">
+                    
+                    <EntryCell Label=" Likes" Placeholder="Calculated Real-Time " >
+
+                    </EntryCell>
+                    <EntryCell Label=" Comments" Placeholder="Calculated Real-Time " >
+
+                    </EntryCell>
+
+                </TableSection>
+
+                    <TableSection Title="Facebook Gains">
+                    
+                    <EntryCell Label=" Likes" Placeholder="Calculated Real-Time " >
+
+                    </EntryCell>
+                    <EntryCell Label=" Comments" Placeholder="Calculated Real-Time " >
+
+                    </EntryCell>
+
+                </TableSection>
+                    <TableSection Title="Participatioin">
+                    
+                    <EntryCell Label="Succesful" Placeholder="Calculated Real-Time " >
+
+                    </EntryCell>
+                    <EntryCell Label="Unsuccessful" Placeholder="Calculated Real-Time " >
+
+                    </EntryCell>
+                </TableSection>
+             </TableRoot>
+        </TableView>
+
+                          <Frame Style="{StaticResource HeaderFrame}" Padding="5">
+                 <Grid Style="{StaticResource HeaderFrame}">
+                        <Button Style="{StaticResource ButtonMainPage}" HorizontalOptions="Start" x:Name="btn1"  Text="Chat"  />
+                   <Button Style="{StaticResource ButtonMainPage}" x:Name="btn2"  HorizontalOptions="Center"  Text="Start"  />
+                        <Button Style="{StaticResource ButtonMainPage}" HorizontalOptions="End" x:Name="btn3"   Text="Agree"  />
+                 
+                 </Grid>
+               </Frame>
+
+            
+          </StackLayout>
+	</ContentPage.Content>
+</ContentPage>

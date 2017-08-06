@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage Title="Create New Ad" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XFSMS.Pages.CreateAdPage">
+	<ContentPage.Content>
+
+        <StackLayout Orientation="Vertical">
+                             <Frame Style="{StaticResource ImageFrame}">
+             <Image BackgroundColor="Silver">
+            </Image>
+            </Frame>
+            <TableView BackgroundColor="{StaticResource Primary}">
+            <TableRoot>
+                
+                <TableSection Title=" " >
+                    <EntryCell Label="Title" Placeholder="Your Ad's Title" >
+
+                    </EntryCell>
+                    <EntryCell Label="Description" Placeholder="Describe your services" >
+
+                    </EntryCell>
+
+                    <ViewCell>
+                            
+                        <StackLayout Orientation="Horizontal">
+                        <Label Text="   Service Type" VerticalOptions="Center" HorizontalOptions="End"/> 
+                        <Picker SelectedIndex="1" HorizontalOptions="EndAndExpand" ItemsSource="{Binding _ServiceTypes}">    
+                            </Picker>
+                        </StackLayout>
+                    </ViewCell>
+
+                </TableSection>
+                <TableSection Title=" ">
+                    
+
+                    <EntryCell Label="Offer ($)" Placeholder="Ex: 15" >
+
+                    </EntryCell>
+                    <EntryCell Label="Accept ($)" Placeholder="Ex: 30" >
+
+                    </EntryCell>
+
+                </TableSection>
+                    <TableSection Title=" ">
+                    
+                    <EntryCell Label="Age" Placeholder="Ex: 15-34, 10-15 " >
+
+                    </EntryCell>
+                    <EntryCell Label="Platforms" Placeholder="Ex: instagram, Facebook etc" >
+
+                    </EntryCell>
+                    <EntryCell Label="Locations" Placeholder="Ex: California, Indiana.. " >
+
+                    </EntryCell>
+                    <EntryCell Label="Account Size " Placeholder="Ex: 10K Followers" >
+
+                    </EntryCell>
+                </TableSection>
+             </TableRoot>
+        </TableView>
+              <Frame Style="{StaticResource HeaderFrame}" Padding="5" CornerRadius="0" >
+                 <Grid Style="{StaticResource HeaderFrame}">
+                        <Button Style="{StaticResource ButtonMainPage}" HorizontalOptions="Start" x:Name="btn1"  Text="Chat"  />
+                   
+                        <Button Style="{StaticResource ButtonMainPage}" HorizontalOptions="End" x:Name="btn2"   Text="Post"  />
+                 
+                 </Grid>
+               </Frame>
+            
+          </StackLayout>
+	</ContentPage.Content>
+</ContentPage>

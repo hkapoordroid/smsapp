@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:XFSMS.Views" x:Class="XFSMS.Pages.LogInPage">
+	<ContentPage.Content >
+        <AbsoluteLayout HorizontalOptions= "Center" VerticalOptions="Center">
+        <StackLayout Orientation="Vertical" BackgroundColor="White" AnchorY="200">
+        <Entry x:Name="txtUser" Style="{StaticResource EntryMainPage}" HorizontalOptions="CenterAndExpand" WidthRequest="300" Placeholder="Username" Text="{Binding _Username}"></Entry>
+        <Entry x:Name="txtPassword" Style="{StaticResource EntryMainPage}" HorizontalOptions="CenterAndExpand" WidthRequest="300" IsPassword="true" Placeholder="Password" Text="{Binding _Password}"></Entry>
+        <Frame HasShadow="false"/>
+                <Button x:Name="btnLogIn" Command="{Binding GoToHome}" HorizontalOptions="Center" Style="{StaticResource ButtonMainPage}" Text="Log In"></Button>
+        <Button x:Name="btnSignUp" Style="{StaticResource ButtonMainPage}" HorizontalOptions="Center" Text="Sign Up">                </Button>
+        <Frame HasShadow="false"/>
+                <Button x:Name="btnLogInFB"  HorizontalOptions="Center" Style="{StaticResource ButtonMainPage}" Text="LogIn FB"></Button>
+        <Button x:Name="btnForgot" Style="{StaticResource ButtonMainPage}" HorizontalOptions="Center" Text="Forgot"></Button>
+
+        </StackLayout>
+
+        </AbsoluteLayout>
+	</ContentPage.Content>
+</ContentPage>

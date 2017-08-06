@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{E957163D-877F-4E84-B9F5-44BA9E383258}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="XFSMS/Models/AdPost.cs">
+    <Files>
+      <File FileName="XFSMS/PageModels/HelpPageModel.cs" Line="14" Column="13" />
+      <File FileName="XFSMS/PageModels/HomePageModel.cs" Line="1" Column="1" />
+      <File FileName="XFSMS/PageModels/ExplorePageModel.cs" Line="58" Column="3" />
+      <File FileName="XFSMS/App.xaml.cs" Line="31" Column="49" />
+      <File FileName="XFSMS/PageModels/UserProfilePageModel.cs" Line="1" Column="1" />
+      <File FileName="XFSMS/Pages/HomePage.xaml" Line="2" Column="14" />
+      <File FileName="XFSMS/Pages/ExplorePage.xaml" Line="38" Column="49" />
+      <File FileName="XFSMS/Pages/SettingsPage.xaml" Line="2" Column="29" />
+      <File FileName="XFSMS/Pages/UserProfilePage.xaml" Line="2" Column="28" />
+      <File FileName="XFSMS/Pages/HelpPage.xaml" Line="7" Column="1" />
+      <File FileName="XFSMS/Pages/AdPage.xaml" Line="6" Column="1" />
+      <File FileName="XFSMS/Services/DataService.cs" Line="37" Column="10" />
+      <File FileName="XFSMS/Services/IDataService.cs" Line="17" Column="9" />
+      <File FileName="XFSMS/Models/AdPost.cs" Line="14" Column="55" />
+      <File FileName="XFSMS/Services/AuthenticateService.cs" Line="31" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.XFSMS.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.4894DDAD-36F9-40DF-BA9A-7219B7CE5350" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.XFSMS.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+  <MultiItemStartupConfigurations />
+</Properties>

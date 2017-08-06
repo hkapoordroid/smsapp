@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StackLayout xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:XFSMS.Views" x:Class="XFSMS.Views.ContestTileView" x:Name="this" Orientation="Vertical">
+    
+    <BoxView BackgroundColor="Green" HorizontalOptions="FillAndExpand"/>
+    <local:ContestTileStatsRibbon BackgroundColor="Olive" TxtAffinity="Likes" TxtCrowd="Followers" TxtTalks="Comments" CountAffinity="{Binding InstaLikes, Source={x:Reference this}}" CountTalks="{Binding InstaComments, Source={x:Reference this}}" CountCrowd="{Binding InstaFollowers, Source={x:Reference this}}"/>
+
+</StackLayout>

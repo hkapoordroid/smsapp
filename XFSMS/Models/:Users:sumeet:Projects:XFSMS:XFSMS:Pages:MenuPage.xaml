@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XFSMS.Pages.MenuPage">
+	<ContentPage.Content>
+                 <Frame Style="{StaticResource ButtonFrame}" Margin="0" Padding="0" HasShadow="false" >
+                    <ListView x:Name="MenuList" HorizontalOptions="FillAndExpand" Style="{StaticResource ListViewStyle}" SeparatorVisibility="None"  VerticalOptions="Center"  ItemsSource="{Binding _MenuItems}">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Frame Padding="10" Margin="10">
+                                        <Label x:Name="menuitem" Text="{Binding}"  />              
+                                    </Frame>
+                                </ViewCell>
+                                    <!--local:ContestTile InstaLikes="{Binding _InstaLikes}" InstaComments="{Binding _InstaComments}" InstaFollowers="{Binding _InstaFollowers}" />-->
+
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                        <!--local:ContestTile InstaLikes="80" InstaComments="90" InstaFollowers="76" />-->
+                    </ListView>
+                </Frame>
+	</ContentPage.Content>
+</ContentPage>

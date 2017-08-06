@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ViewCell xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XFSMS.Views.ContestTile" x:Name="this" xmlns:local="clr-namespace:XFSMS.Views"  HeightRequest="200" WidthRequest="200">
+         <Grid>  
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="1*"/>        
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width ="*"/>
+                <ColumnDefinition Width ="*"/>
+                <ColumnDefinition Width ="*"/>   
+                <ColumnDefinition Width ="*"/>
+                <ColumnDefinition Width ="*"/>
+                <ColumnDefinition Width ="*"/> 
+                <ColumnDefinition Width ="*"/>
+                <ColumnDefinition Width ="*"/> 
+            </Grid.ColumnDefinitions>
+            <BoxView BackgroundColor="red"  Grid.ColumnSpan="3" Grid.Column="0" Grid.Row="0"/>
+            <BoxView BackgroundColor="red"  Grid.Column="0" Grid.Row="1"/>
+            <Label x:Name="Count" Text="{Binding InstaLikes, Source={x:Reference this}}"  Grid.Column="1" Grid.Row="1" />
+            <BoxView BackgroundColor="red"   Grid.Column="2" Grid.Row="1" />
+            <Label x:Name="Count" Text="{Binding InstaComments, Source={x:Reference this}}"   Grid.Column="3" Grid.Row="1" />
+            <Label x:Name="Title" Text="Comments"   Grid.Column="4" Grid.Row="1" />
+            <BoxView BackgroundColor="red"   Grid.Column="5" Grid.Row="1" />
+            <Label x:Name="Count" Text="{Binding InstaFollowers, Source={x:Reference this}}"   Grid.Column="6" Grid.Row="1" />
+            <Label x:Name="Title" Text="Followers"   Grid.Column="7" Grid.Row="1" />
+            </Grid> 
+</ViewCell>
